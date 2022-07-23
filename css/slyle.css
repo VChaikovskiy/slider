@@ -1,0 +1,112 @@
+/* .slick-slide img {
+    width: 800px;
+ } */
+
+ body {
+    background-color: chocolate;
+ }
+.box-slider {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: blueviolet;
+} 
+
+.slick-prev {
+    left: -25px;
+    background-color: rgb(250, 244, 244);
+    border-radius: 50%;
+    align-items: center;
+}
+.slick-next {
+    right: -25px;
+    background-color: rgb(243, 237, 237);
+    border-radius: 50%;
+    align-items: center;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+    color: transparent;
+    outline: none;
+    background: blueviolet;
+}
+
+.slick-prev:before {
+    content: '🤪';
+
+}
+
+.slick-next:before {
+    content: '😜';
+
+}
+/* dots */
+
+
+.my-dots {
+    position: absolute;
+    bottom: -45px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.my-dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.my-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.my-dots li button:hover,
+.my-dots li button:focus {
+    outline: none;
+}
+
+.my-dots li button:hover:before,
+.my-dots li button:focus:before {
+    opacity: 1;
+}
+
+.my-dots li button:before {
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: url('https://upload.wikimedia.org/wikipedia/commons/b/b7/Rule_Segment_-_Circle_open_-_20px.svg');
+    text-align: center;
+    opacity: .25;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+.my-dots li.slick-active button:before {
+    opacity: .75;
+    color: black;
+}
